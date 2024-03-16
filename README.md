@@ -10,7 +10,7 @@ The following functionality is completed:
 - [X] User hears a specific sound that each color of the square has
 - [X] User is notified when he loses the game via an alert
 
-## How to run app
+## How to run
 
 1. Double-click on the index.html, it should launch locally in your default browser
 2. Use the app!
