@@ -1,0 +1,171 @@
+header {
+    display: flex;
+    justify-content: center;
+  }
+  .heading {
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .square-container {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 130px 130px;
+    grid-template-columns: 130px 130px;
+    grid-gap: 5px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .unclickable {
+    pointer-events: none;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .square-red {
+    background-color: #f25022;
+    box-shadow: 0 0 0 1px #f25022 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 8px 0 0 #c93a12, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+      0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.15s;
+  }
+  
+  .square-red:hover,
+  .square-red:focus {
+    background-color: #ff451a;
+    box-shadow: 0 0 0 1px #ff3000 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 10px 0 0 #e62b00, 0 10px 0 1px rgba(0, 0, 0, 0.4),
+      0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  .square-red:active,
+  .square-red.activated {
+    box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #ff5c36;
+    transform: translateY(10px);
+  }
+  
+  .square-green {
+    background-color: #7fba00;
+    box-shadow: 0 0 0 1px #7fba00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 8px 0 0 #638f05, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+      0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.15s;
+  }
+  
+  .square-green:hover,
+  .square-green:focus {
+    background-color: #8cc218;
+    box-shadow: 0 0 0 1px #8cc218 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 10px 0 0 #74a802, 0 10px 0 1px rgba(0, 0, 0, 0.4),
+      0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  .square-green:active,
+  .square-green.activated {
+    box-shadow: 0 0 0 1px #a0ea00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #a0ea00;
+    transform: translateY(10px);
+  }
+  
+  .square-yellow {
+    background-color: #ffb900;
+    box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 8px 0 0 #c28e07, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+      0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.15s;
+  }
+  
+  .square-yellow:hover,
+  .square-yellow:focus {
+    background-color: #ffb900;
+    box-shadow: 0 0 0 1px #ffb900 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 8px 0 0 #c28e07, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+      0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .square-yellow:active,
+  .square-yellow.activated {
+    box-shadow: 0 0 0 1px #ffca3d inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #ffca3d;
+    transform: translateY(10px);
+  }
+  
+  .square-blue {
+    background-color: #00a4ef;
+    box-shadow: 0 0 0 1px #00a4ef inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 8px 0 0 #0883bc, 0 8px 0 1px rgba(0, 0, 0, 0.4),
+      0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    transition: 0.15s;
+  }
+  
+  .square-blue:hover,
+  .square-blue:focus {
+    background-color: #139ddd;
+    box-shadow: 0 0 0 1px #139ddd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 10px 0 0 #0c7cb0, 0 10px 0 1px rgba(0, 0, 0, 0.4),
+      0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  .square-blue:active,
+  .square-blue.activated {
+    box-shadow: 0 0 0 1px #2bbcff inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+      0 0 0 1px rgba(0, 0, 0, 0.4);
+    background-color: #2bbcff;
+    transform: translateY(10px);
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .start-button {
+    display: inline-block;
+    height: 40px; /* change to desired height */
+    padding: 0 40px; /* change to desired padding */
+    color: #fff; /* change to desired text color */
+    text-align: center;
+    font-size: 16px; /* change to desired font size */
+    font-weight: 600;
+    line-height: 40px; /* change to desired line height */
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: lightslategray; /* change to desired background color */
+    border-radius: 4px;
+    border: none; /* remove border */
+    cursor: pointer;
+  }
+  
+  .start-button {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  footer {
+    margin-top: 100px; /* add desired margin */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+  }
+  

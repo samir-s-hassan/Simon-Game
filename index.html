@@ -1,0 +1,42 @@
+<!-- Samir Hassan -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Put all the body code in -->
+      <header>
+        <h1 class="heading">Memory Game</h1>
+      </header>
+
+      <section class="square-container js-container unclickable">
+        <div class="square square-green" data-square="green"></div>
+        <div class="square square-red" data-square="red"></div>
+        <div class="square square-yellow" data-square="yellow"></div>
+        <div class="square square-blue" data-square="blue"></div>
+      </section>
+
+      <div class="audiofiles">
+        <audio src="green.wav" data-sound="green"></audio>
+        <audio src="red.wav" data-sound="red"></audio>
+        <audio src="yellow.wav" data-sound="yellow"></audio>
+        <audio src="blue.wav" data-sound="blue"></audio>
+        <audio src="lose.wav" data-sound="lose"></audio>
+      </div>
+
+      <button class="start-button js-start">Start</button>
+
+      <script src="scripts.js"></script>
+
+      <footer>
+        <p2>How long a sequence can you remember?</p2>
+      </footer>
+    </div>
+  </body>
+</html>
